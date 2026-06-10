@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Seenonim';
+  src: url('../fonts/seenonim-v1.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hikasami';
+  src: url('../fonts/Hikasami-VF.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
