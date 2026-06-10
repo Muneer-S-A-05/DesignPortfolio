@@ -73,6 +73,7 @@ ul{
     letter-spacing: 0.02em;
     color:#FBB03B;
     position: absolute;
+    z-index: 3;
     top:100%;
     transform: translate(0%,-120%);
     width:98%;
@@ -98,21 +99,80 @@ ul{
     line-height: 1.1em;
 }
 .circles{
+    z-index: 0;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #CB1D23;
+}
+
+.hero-inside .circles{
     position: absolute;
     top:100%;
     left:50%;
     transform: translate(-50%,-50%);
     height:60vh;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-color: #CB1D23;
-    z-index: 0;
     box-shadow:
         0 0 0 6vw #A20A10,
         0 0 0 14vw #7C0207,
         0 0 0 21vw #5C0004;
 }
 
+.aboutme{
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.aboutme .circles{
+    position: absolute;
+    top:50%;
+    left:0%;
+    transform: translate(-50%,-50%);
+    height:35vh;
+    box-shadow:
+        0 0 0 3vw #A20A10,
+        0 0 0 6vw #7C0207,
+        0 0 0 9vw #5C0004;
+}
+
+.maintext{
+    text-indent: 18vw;
+    font-family: 'Seenonim';
+    z-index: 1;
+    text-align: justify;
+    font-size: clamp(0.1rem,6vw + 2rem,2em);
+    max-width:60vw;
+    color: white;
+    margin-bottom: 20vh;
+    margin-right: 150px;
+    margin-left: auto;
+}
+
+.detailed{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: 'Hikasami';
+    text-align: justify;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    margin: 12em auto auto 42vw;
+}
+
+.high{
+    color:#FBB03B
+}
+
+.maintext::first-line{
+    text-align: right;
+}
+
 .footer{
     height:30vh;
+    background-color: yellow;
 }
