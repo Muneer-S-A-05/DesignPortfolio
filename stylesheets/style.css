@@ -174,7 +174,8 @@ ul{
 }
 
 .works{
-    height: 110vh;
+    height: auto;
+    width: 100%
 }
 
 /*
@@ -188,11 +189,11 @@ trying to use this when scroll feature is introduced
     background-color: white;
     height: 55vh;
     display: flex;
-    justify-content: space space-evenly;
     align-items: center;
     padding-left: 50px;
     overflow: hidden;
     gap: 35px;
+    flex-shrink: 0;
 }
 
 .item{
@@ -213,12 +214,22 @@ trying to use this when scroll feature is introduced
     font-size: 1.2em;
 }
 
+#tshirts .images{
+    gap: 10px;
+    margin: 0%;
+}
+
+#izha .images{
+    justify-content: space-evenly;
+}
+
 .work-description{
     display: flex;
     flex-direction: column;
     width: 100vw;
     max-width: 100%;
     box-sizing: border-box;
+    padding-bottom: 50px;
 }
 
 .work-description .title{
@@ -229,13 +240,14 @@ trying to use this when scroll feature is introduced
     box-sizing: border-box;
     font-family: 'Seenonim';
     color: #FBB03B;
-    font-size: clamp(0.1rem,6vw + 2rem,4.5em);
+    font-size: clamp(0.1rem,6vw + 1.5rem,4.5em);
     margin: 30px 0 0 0;
     padding: 0 30px;
     overflow: hidden;
 }
 
 .work-description .title.inverted{
+    font-size: clamp(0.1rem,4vw + 0.9rem, 4.5em);
     flex-direction: row;
 }
 
@@ -265,19 +277,64 @@ trying to use this when scroll feature is introduced
     display: flex;
     align-items: center;
     justify-content: stretch;
-    height:35vh;
+    height:30vh;
     background-color: white;
 }
 
 .contact{
-    height: 33vh;
+    height: 28vh;
     width: 100%;
     background-color: black;
     position: relative;
     overflow: hidden;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.contact .title{
+    z-index: 1;
+    font-family: 'Seenonim';
+    font-size: 4em;
+    color: #FBB03B;
+}
+
+.details{
+    z-index: 1;
+    margin: 15px 0 auto 0;
+    display: flex;
+    color: white;
+    font-family: 'Hikasami';
+    font-size: 1em;
+    gap: 10%;
+}
+
+.insta{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+
+.instaid{
+    display:flex;
+    align-items:center;
+    gap:0.35em;
+    transform: translate(-1%,0%);
+}
+
+.instaid.white{
+    filter: brightness(0) invert(1);
+}
+
+.other{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
 }
 
 .foot.circles{
+    z-index: 0;
     position: absolute;
     top:50%;
     left: auto;
@@ -288,4 +345,10 @@ trying to use this when scroll feature is introduced
         0 0 0 3vw #A20A10,
         0 0 0 6vw #7C0207,
         0 0 0 9vw #5C0004;
+}
+
+a{
+    font-style: none;
+    text-decoration: none;
+    color: inherit;
 }
