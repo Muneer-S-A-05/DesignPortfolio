@@ -175,7 +175,7 @@ ul{
 
 .works{
     height: auto;
-    width: 100%
+    width: 100%;
 }
 
 /*
@@ -188,12 +188,15 @@ trying to use this when scroll feature is introduced
 .images{
     background-color: white;
     height: 55vh;
+    width: auto;
     display: flex;
     align-items: center;
-    padding-left: 50px;
-    overflow: hidden;
+    padding: 0px 50px;
     gap: 35px;
     flex-shrink: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 .item{
