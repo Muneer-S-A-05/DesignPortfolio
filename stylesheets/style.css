@@ -53,7 +53,7 @@ ul{
     overflow: hidden;
 }
 
-.title{
+.hero-inside .title{
     position: absolute;
     font-family: 'Seenonim';
     font-size: clamp(0.1rem,6vw + 2rem,7.5rem);
@@ -124,6 +124,7 @@ ul{
     justify-content: center;
     align-items: center;
     height: 95vh;
+    overflow: hidden;
 }
 
 .aboutme .circles{
@@ -147,7 +148,7 @@ ul{
     max-width:60vw;
     color: white;
     margin-bottom: 20vh;
-    margin-right: 150px;
+    margin-right: 12vw;
     margin-left: auto;
 }
 
@@ -172,7 +173,119 @@ ul{
     text-align: right;
 }
 
+.works{
+    height: 110vh;
+}
+
+/*
+trying to use this when scroll feature is introduced
+.image-container{
+    width: 100vw;
+}
+*/
+
+.images{
+    background-color: white;
+    height: 55vh;
+    display: flex;
+    justify-content: space space-evenly;
+    align-items: center;
+    padding-left: 50px;
+    overflow: hidden;
+    gap: 35px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Hikasami';
+    font-size: 0.8em;
+}
+
+.item img{
+    height: 35vh;
+}
+
+.item h3{
+    padding: 20px 0px 0px 0px;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.work-description{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.work-description .title{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Seenonim';
+    color: #FBB03B;
+    font-size: clamp(0.1rem,6vw + 2rem,4.5em);
+    margin: 30px 0 0 0;
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+.work-description .title.inverted{
+    flex-direction: row;
+}
+
+.work-description img{
+    height: 0.7em;
+    margin: 25px;
+}
+
+.work-description .title.inverted img{
+    transform: rotate(180deg);
+}
+
+.work-description .work-content{
+    width: 35vw;
+    align-self: flex-end;
+    margin: 30px;
+    text-align: justify;
+    font-family: "hikasami";
+    color: white;
+}
+
+.work-description .work-content.inverted{
+    align-self: flex-start;
+}
+
 .footer{
-    height:30vh;
-    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    height:35vh;
+    background-color: white;
+}
+
+.contact{
+    height: 33vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.foot.circles{
+    position: absolute;
+    top:50%;
+    left: auto;
+    right: 0;
+    transform: translate(50%,-50%);
+    height:25vh;
+    box-shadow:
+        0 0 0 3vw #A20A10,
+        0 0 0 6vw #7C0207,
+        0 0 0 9vw #5C0004;
 }
