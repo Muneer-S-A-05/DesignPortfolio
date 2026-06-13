@@ -178,13 +178,6 @@ ul{
     width: 100%;
 }
 
-/*
-trying to use this when scroll feature is introduced
-.image-container{
-    width: 100vw;
-}
-*/
-
 .images{
     background-color: white;
     height: 55vh;
@@ -205,9 +198,15 @@ trying to use this when scroll feature is introduced
     align-items: center;
     font-family: 'Hikasami';
     font-size: 0.8em;
+    user-select: none;
+    pointer-events: none;
 }
 
 .item img{
+    height: 35vh;
+}
+
+.item video{
     height: 35vh;
 }
 
@@ -295,6 +294,7 @@ trying to use this when scroll feature is introduced
 }
 
 .contact .title{
+    position: relative;
     z-index: 1;
     font-family: 'Seenonim';
     font-size: 4em;
